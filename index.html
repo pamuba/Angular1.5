@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="myModule">
+  <head>
+    <title>Document</title>
+    <script src="angular.js"></script>
+    <script src="script.js"></script>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- <div ng-controller="myController1">
+      {{ message }}
+    </div>
+    <div ng-controller="myController2">
+      {{ message }}
+    </div> -->
+    <div ng-controller="myController3">
+      <div>First Name: {{emp.firstName}}</div>
+      <div>Last Name: {{emp.lastName}}</div>
+      <div>City: {{emp.city}}</div>
+      <div>Flag: <img ng-src={{emp.flag}} height="200" width="300" /></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="myModule">
+  <head>
+    <title>Document</title>
+    <script src="angular.js"></script>
+    <script src="script1.js"></script>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+  </head>
+  <body>
+    <div ng-controller="myController1">
+        <input type="text" ng-model="message">
+        {{ message }}
+    </div>
+  </body>
+</html>
