@@ -10,10 +10,29 @@
         }
     </style>
   </head>
-  <body>
-    <div ng-controller="myController1">
-        <input type="text" ng-model="message">
-        {{ message }}
-    </div>
+  <body ng-controller="myController1">
+   <div>
+       <table>
+           <thead>
+               <tr>
+                   <th>Name</th>
+                   <th>Likes</th>
+                   <th>Dislikes</th>
+                   <th>Like/Dislike</th>
+               </tr>
+           </thead>
+           <tbody>
+               <tr ng-repeat="tech in technologies">
+                   <td>{{tech.name}}</td>
+                   <td>{{tech.likes}}</td>
+                   <td>{{tech.dislikes}}</td>
+                   <td>
+                       <input type="button" value="Like" ng-click="incrementLikes(tech)">
+                       <input type="button" value="Disike" ng-click="incrementDislikes(tech)">
+                   </td>
+               </tr>
+           </tbody>
+       </table>
+   </div>
   </body>
 </html>
