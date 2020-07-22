@@ -1,0 +1,35 @@
+Types:
+1. Components
+--Custom Directives, widgets, has own HTML(templates)
+2. Decorators
+--enhance funtionality of existing directives
+--ng-click
+3. Templating
+--ng-repeat
+
+
+Compile:
+1. Loads & traverses the Template DOM
+2. Executes only once
+3. returns link function/Object(pre and post)
+4. No Scopes available
+5. No instance or clone of templated created yet
+
+
+Link(Controller):
+1.the fisrt to execute for every instance/clone of template
+2. Creates the scope for the template instance
+3. not recommende to access instance DOM
+
+Link(Pre):
+1. executes immediately after controller phase
+2. ref to DOM template instance is available
+3. Scope for the instance is ready
+4. instance is not linked to scope yet
+5. child elements/directives are not ready
+
+Link(Post):
+1. last phase of linking for every instance
+2. scope and instance are linked 
+3. child elements/directives are ready
+
