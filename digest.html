@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <script src="angular.js"></script>
     <script src="digest.js"></script>
     <title>Document</title>
-</head>
-<body ng-app="app">
-    <div ng-controller="emp">
 
-        a = <input ng-model="a">
-        <div>a = {{a}}</div>
-        <hr>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body ng-app="app">
+    <div id="div1" ng-controller="emp">
+      a = <input ng-model="a" />
+      <div>a = {{a}}</div>
+      <hr />
 
-        b = <input ng-model="b">
-        <div>b = {{b}}</div>
-        <hr>
+      b = <input ng-model="b" />
+      <div>b = {{b}}</div>
+      <hr />
 
-        <!-- c = <input ng-model="c">
+      <!-- c = <input ng-model="c">
         <div>a = {{c}}</div>
         <hr> -->
 
+      <button ng-click="calcSum()">Calc Sum</button>
+      <button onclick="btnClick()">Sum</button>
+      <div>sum={{s}}</div>
     </div>
-</body>
+  </body>
 </html>
